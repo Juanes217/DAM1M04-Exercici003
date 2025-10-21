@@ -1,0 +1,14 @@
+.barra{
+    background-color: #fff;
+    backdrop-filter: none;
+}
+
+.barra-fixed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
