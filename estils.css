@@ -5,15 +5,24 @@ html,body{
 }
 
 .cabecera {
-    text-align: center;
+    text-align:auto;
     margin: 0px 400px;
-    padding: 10px;
+    padding: 0px;
     max-width: 1000px;
     border-bottom: 1px solid #dfdfdf;
+    padding: 15px;
+}
+.cabecera a {
+    color: black;
+    bottom: 5px solid #e6e6e6;
 }
 
+
 .menu {
+    position: fixed;
     display: flex;
+    margin-top: 10px;
+    padding: 0px 400px;
     justify-content: space-between;
     gap: 1.5rem;
     max-width: 980px;
@@ -26,13 +35,13 @@ html,body{
 
 .foto{
     margin-right: 10px;
+    height: 40px;
 }
 
 .logo {
-    font-size: 22px;
-    padding: 10px 400px;
+    font-size: 17px;
     font-weight: bold;
-    display: flex;
+    display:block;
     align-items: center;
 }
 
@@ -48,9 +57,6 @@ html,body{
   transition: color 0.2s ease;
 }
 
-.logo span:hover {
-  color: #111;
-}
 
 .btn-compra {
   background-color: #ff4081;
