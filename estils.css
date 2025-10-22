@@ -1,14 +1,67 @@
-.barra{
-    background-color: #fff;
-    backdrop-filter: none;
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.barra-fixed {
+
+.cabecera {
+    text-align: center;
+    margin: 0px 400px;
+    padding: 10px;
+    max-width: 1000px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.menu {
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
+    max-width: 980px;
+
+}
+
+.menu a {
+    color: black;
+    bottom: 5px solid #e6e6e6;
+
+
+}
+
+.foto{
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 22px;
+    padding: 10px 400px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo p {
     align-items: center;
 }
 
-.center{
-    text-align: center;
+.logo span{
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+
+
+.logo span:hover {
+  color: #111;
+}
+
+.btn-compra {
+  background-color: #ff4081;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
 }
