@@ -20,7 +20,7 @@ html,body{
 
 .menu {
     position: fixed;
-    display: flex;
+    display:flex;
     margin-top: 10px;
     padding: 0px 400px;
     justify-content: space-between;
@@ -29,8 +29,10 @@ html,body{
 }
 
 .menu a {
-    color: black;
-    bottom: 5px solid #e6e6e6;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .foto{
@@ -44,19 +46,6 @@ html,body{
     display:block;
     align-items: center;
 }
-
-
-.logo p {
-    align-items: center;
-}
-
-.logo span{
-  text-decoration: none;
-  color: #444;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
 
 .btn-compra {
   background-color: #ff4081;
