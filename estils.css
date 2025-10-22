@@ -4,7 +4,6 @@ html,body{
     width: 100%;
 }
 
-
 .cabecera {
     text-align: center;
     margin: 0px 400px;
@@ -18,14 +17,11 @@ html,body{
     justify-content: space-between;
     gap: 1.5rem;
     max-width: 980px;
-
 }
 
 .menu a {
     color: black;
     bottom: 5px solid #e6e6e6;
-
-
 }
 
 .foto{
@@ -38,8 +34,8 @@ html,body{
     font-weight: bold;
     display: flex;
     align-items: center;
-
 }
+
 
 .logo p {
     align-items: center;
@@ -52,8 +48,6 @@ html,body{
   transition: color 0.2s ease;
 }
 
-
-
 .logo span:hover {
   color: #111;
 }
@@ -65,6 +59,7 @@ html,body{
   border-radius: 20px;
   font-weight: 600;
 }
+
 
 /* Pie de pagina css */
 .pie {
