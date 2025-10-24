@@ -59,6 +59,7 @@ html,body{
 .btn-compra {
   background-color: #ff4081;
   color: white !important;
+  text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 600;
@@ -98,6 +99,11 @@ html,body{
   max-width: 700px;
   margin: 0 auto 30px auto;
 }
+
+/*  Parte de como esta POWERED*/
+
+
+
 
 /*  Parte de los premios*/
 
