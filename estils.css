@@ -100,6 +100,65 @@ html,body{
   margin: 0 auto 30px auto;
 }
 
+
+/* Sección con fondo negro */
+.seccion-negra {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.contenido-negro {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-superior {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.imagen-principal {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Grid de características */
+.grid-caracteristicas-vector {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Tarjetas de características */
+.caracteristica-card-vector {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-descripcion-vector {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-miniatura-vector {
+    max-width: 100px;
+    height: auto;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
 /*  Parte de como esta POWERED*/
 
 .powered{
