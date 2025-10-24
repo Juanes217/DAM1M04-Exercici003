@@ -14,9 +14,17 @@ html,body{
 }
 .cabecera a {
     color: black;
-    bottom: 5px solid #e6e6e6;
+    text-decoration: none;
+
 }
 
+.cabecera nav {
+    display: flex;
+    justify-content: center;        
+    gap: 130px;                     
+    max-width: 980px;               
+    width: 100%;
+}
 
 .menu {
     position: fixed;
@@ -24,7 +32,7 @@ html,body{
     margin-top: 10px;
     padding: 0px 400px;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 50px;
     max-width: 980px;
 }
 
@@ -55,6 +63,40 @@ html,body{
   font-weight: 600;
 }
 
+/* pagina normal despues de la cabecera */
+
+.pagina1 {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.pagina1-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pagina1 h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.pagina1-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.pagina1 p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
 
 /* Pie de pagina css */
 .pie {
