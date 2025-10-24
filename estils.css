@@ -99,6 +99,40 @@ html,body{
   margin: 0 auto 30px auto;
 }
 
+.pixelmator-apple-ancho {
+    width: calc(100% - 80px);
+    padding: 0 40px;
+}
+
+.pixelmator-apple-elemento {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.pixelmator-apple-elemento img {
+  width: 128px;
+  height: 128px;
+  padding: 0 20px;
+}
+
+.pixelmator-apple-elemento h2 {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f0f0f;
+}
+
+.pixelmator-apple-elemento h3 {
+  font: inherit;
+  max-width: 450px;
+  margin: 6px auto;
+  padding: 4px 0;
+  font-size: 20px;
+  color: #333;
+  line-height: 28px;
+}
+
 /* Pie de pagina css */
 .pie {
     margin-top: 200px;
