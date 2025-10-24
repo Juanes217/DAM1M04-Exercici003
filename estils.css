@@ -99,9 +99,79 @@ html,body{
   margin: 0 auto 30px auto;
 }
 
+/*  Parte de los premios*/
+
+.premios {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 180px 0px 190px;
+  color: black;
+}
+
+.premios-elemento {
+  width: 100%;
+  max-width: 1560px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.premios-elemento-header{
+  display: block;
+  text-align: center;
+}
+
+.premios-elemento-header h2{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 650px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.premios-elemento-header p{
+  max-width: 650px;
+  margin-top: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  color:#333;
+  font-size: 20px;
+}
+
+.premios ul {
+  display: flex;
+  flex-wrap: wrap;       /* permite que pasen a otra línea */
+  justify-content: center;
+  list-style: none;      /* quita los puntos */
+  padding: 0;
+  margin: 40px auto;
+  max-width: 900px;      /* ancho máximo centrado */
+  gap: 30px;             /* espacio entre los elementos */
+}
+
+.premios li {
+  flex: 0 0 calc(50% - 30px);  /* 2 por fila, restando el espacio del gap */
+  text-align: center;
+}
+
+.premios li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.premios li h4 {
+  max-width: 250px;
+  margin: 19px auto 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 /* Parte de abajo del footer pixelmator para Mac*/
 
 .pixelmator-apple-ancho {
+    margin-top: 100px;
     width: calc(100% - 80px);
     padding: 0 40px;
 }
