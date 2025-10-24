@@ -99,6 +99,8 @@ html,body{
   margin: 0 auto 30px auto;
 }
 
+/* Parte de abajo del footer pixelmator para Mac*/
+
 .pixelmator-apple-ancho {
     width: calc(100% - 80px);
     padding: 0 40px;
