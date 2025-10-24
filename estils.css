@@ -102,7 +102,85 @@ html,body{
 
 /*  Parte de como esta POWERED*/
 
+.powered{
+  display: block;
+  background-color: #000000;
+  padding: 180px 0px 190px;
+}
 
+.powered-elemento{
+  width: 100%;
+  max-width: 1560px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.powered-header{
+  display: block;
+  text-align: center;
+  color:#ffffff;
+}
+
+.powered-header h2{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 650px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.powered-header p{
+  max-width: 650px;
+  margin-top: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  color:#d4d3d3;
+}
+
+.powered ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     /* centra el conjunto de elementos */
+  list-style: none;
+  padding: 0;
+  margin: 40px auto;
+  max-width: 1000px;
+  gap: 40px;
+}
+
+.powered li {
+  flex: 0 0 calc(33.333% - 40px);  /* 3 elementos por fila */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;         /* alinea el contenido a la izquierda */
+  text-align: left;                /* texto alineado a la izquierda */
+  background: transparent;
+  color: white;
+  max-width: 300px;                /* controla el ancho máximo */
+}
+
+.powered li img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.powered li h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: white;
+}
+
+.powered li p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d4d3d3;
+  line-height: 1.5;
+}
 
 
 /*  Parte de los premios*/
