@@ -141,7 +141,6 @@ html,body{
     text-align: left;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card-descripcion-vector {
