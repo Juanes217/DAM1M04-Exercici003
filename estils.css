@@ -26,8 +26,8 @@ html,body{
 
 .menu {
   position: fixed;
-  top: 55px; /* debajo de la cabecera */
-  left: 0;
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: #a2a0a0;
   z-index: 1000;
