@@ -1,9 +1,11 @@
-html,body{
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden; /* evita scroll lateral */
 }
 
+/* Cabecera */
 .cabecera {
   width: 100%;
   border-bottom: 1px solid #dfdfdf;
@@ -17,15 +19,14 @@ html,body{
 
 .cabecera nav {
   display: flex;
-  justify-content: center;        
-  gap: 130px;                     
-  max-width: 1000px;   
-  margin: auto;            
+  justify-content: center;
+  gap: 130px;
+  max-width: 1000px;
+  margin: auto;
   width: 100%;
 }
 
 .menu {
-  position: fixed;
   position: sticky;
   top: 0;
   width: 100%;
@@ -48,7 +49,7 @@ html,body{
   color: #000000;
 }
 
-.foto{
+.foto {
   margin-right: 10px;
   height: 40px;
 }
@@ -62,8 +63,7 @@ html,body{
   font-weight: 600;
 }
 
-/* pagina normal despues de la cabecera */
-
+/* Página principal */
 .pagina1 {
   text-align: center;
   padding: 80px 20px;
@@ -97,147 +97,135 @@ html,body{
   margin: 0 auto 30px auto;
 }
 
-
-/* Sección con fondo negro */
+/* Sección negra */
 .seccion-negra {
-    background-color: #000;
-    color: #fff;
-    padding: 80px 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 80px 20px;
 }
 
 .contenido-negro {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .texto-superior {
-    max-width: 800px;
-    margin: 0 auto 60px auto;
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
 }
 
 .imagen-principal {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Grid de características */
+/* Grid características */
 .grid-caracteristicas-vector {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
 
-/* Tarjetas de características */
 .caracteristica-card-vector {
-    background-color: #111;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+  background-color: #111;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-descripcion-vector {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ccc;
-    margin-bottom: 20px;
-    flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
+  flex-grow: 1;
 }
 
 .card-miniatura-vector {
-    max-width: 100px;
-    height: auto;
-    margin-top: 20px;
-    align-self: flex-start;
+  max-width: 100px;
+  height: auto;
+  margin-top: 20px;
+  align-self: flex-start;
 }
 
-
-/* Parte de Los iconos encima de Powered */
-.iconos{
+/* Iconos (sección “Designed and built exclusively for Mac.”) */
+.iconos {
   display: block;
   padding: 180px 0px 190px;
 }
 
-.iconos-elemento{
+.iconos-elemento {
   width: 100%;
   max-width: 1560px;
   padding: 0 20px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
-.iconos-header{
+.iconos-header {
   display: block;
   text-align: center;
-  color:#000000;
+  color: #000000;
 }
 
-.iconos-header h2{
-  margin-right: auto;
-  margin-left: auto;
+.iconos-header h2 {
+  margin: 0 auto;
   max-width: 650px;
   font-size: 60px;
   font-weight: 600;
   line-height: 1;
 }
 
-.iconos-header p{
+.iconos-header p {
   max-width: 650px;
-  margin-top: 23px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 23px auto 0;
   font-size: 20px;
-  color:#2f2e2e;
+  color: #2f2e2e;
 }
 
-/*  Parte de como esta POWERED*/
-
-.powered{
+/* Sección “Powered” */
+.powered {
   display: block;
   background-color: #000000;
   padding: 180px 0px 190px;
 }
 
-.powered-elemento{
+.powered-elemento {
   width: 100%;
   max-width: 1560px;
   padding: 0 20px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
-.powered-header{
+.powered-header {
   display: block;
   text-align: center;
-  color:#ffffff;
+  color: #ffffff;
 }
 
-.powered-header h2{
-  margin-right: auto;
-  margin-left: auto;
+.powered-header h2 {
+  margin: 0 auto;
   max-width: 650px;
   font-size: 60px;
   font-weight: 600;
   line-height: 1;
 }
 
-.powered-header p{
+.powered-header p {
   max-width: 650px;
-  margin-top: 23px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 23px auto 0;
   font-size: 20px;
-  color:#d4d3d3;
+  color: #d4d3d3;
 }
 
 .powered ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;     /* centra el conjunto de elementos */
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 40px auto;
@@ -246,14 +234,14 @@ html,body{
 }
 
 .powered li {
-  flex: 0 0 calc(33.333% - 40px);  /* 3 elementos por fila */
+  flex: 0 0 calc(33.333% - 40px);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;         /* alinea el contenido a la izquierda */
-  text-align: left;                /* texto alineado a la izquierda */
+  align-items: flex-start;
+  text-align: left;
   background: transparent;
   color: white;
-  max-width: 300px;                /* controla el ancho máximo */
+  max-width: 300px;
 }
 
 .powered li img {
@@ -276,9 +264,7 @@ html,body{
   line-height: 1.5;
 }
 
-
-/*  Parte de los premios*/
-
+/* Premios */
 .premios {
   display: block;
   background-color: #f2f2f2;
@@ -290,46 +276,42 @@ html,body{
   width: 100%;
   max-width: 1560px;
   padding: 0 20px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
-.premios-elemento-header{
+.premios-elemento-header {
   display: block;
   text-align: center;
 }
 
-.premios-elemento-header h2{
-  margin-right: auto;
-  margin-left: auto;
+.premios-elemento-header h2 {
+  margin: 0 auto;
   max-width: 650px;
   font-size: 60px;
   font-weight: 600;
   line-height: 1;
 }
 
-.premios-elemento-header p{
+.premios-elemento-header p {
   max-width: 650px;
-  margin-top: 23px;
-  margin-right: auto;
-  margin-left: auto;
-  color:#333;
+  margin: 23px auto 0;
+  color: #333;
   font-size: 20px;
 }
 
 .premios ul {
   display: flex;
-  flex-wrap: wrap;       /* permite que pasen a otra línea */
+  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;      /* quita los puntos */
+  list-style: none;
   padding: 0;
   margin: 40px auto;
-  max-width: 900px;      /* ancho máximo centrado */
-  gap: 30px;             /* espacio entre los elementos */
+  max-width: 900px;
+  gap: 30px;
 }
 
 .premios li {
-  flex: 0 0 calc(50% - 30px);  /* 2 por fila, restando el espacio del gap */
+  flex: 0 0 calc(50% - 30px);
   text-align: center;
 }
 
