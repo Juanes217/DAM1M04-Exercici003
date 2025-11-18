@@ -55,7 +55,7 @@ html, body {
 
 .btn-compra {
   background-color: #ff4081;
-  color: white;
+  color: white !important;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
