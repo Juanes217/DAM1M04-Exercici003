@@ -4,6 +4,10 @@ html, body {
   width: 100%;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Cabecera */
 .cabecera {
   width: 100%;
@@ -145,6 +149,198 @@ html, body {
   height: auto;
   margin-top: 20px;
   align-self: flex-start;
+}
+
+/* siguiente pagina en negro */
+.seccion-negra {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px; 
+}
+
+.contenido-negro {
+  max-width: 900px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+.texto-superior h2 {
+  font-size: 3rem; 
+  margin-bottom: 20px; 
+  font-weight: 700;
+}
+
+.texto-superior p {
+  font-size: 20px; 
+  margin-bottom: 40px; 
+  color: #ccc;
+}
+
+.imagen-principal-contenedor {
+  margin-bottom: 40px; 
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-principal {
+  max-width: 1000px; 
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-caracteristicas-fotos {
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px 30px; 
+  text-align: left;
+  max-width: 900px; 
+}
+
+.caracteristica-card-foto {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+
+.card-icono-foto {
+  width: 24px; 
+  height: 24px; 
+  border-radius: 4px;
+}
+
+.enlace-destacado {
+  color: #6495ed; 
+  text-decoration: none;
+}
+
+.enlace-final {
+  color: #6495ed;
+  text-decoration: none;
+}
+
+
+/* siguiente pagina despues de la pagina en negro */
+
+.seccion-diseno {
+  background-color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.diseno-header {
+  margin-bottom: 60px;
+}
+
+.diseno-header h2 {
+  font-size: 56px; 
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 600px; 
+  margin: 0 auto 20px auto;
+  color: #000;
+}
+
+.diseno-header p {
+  font-size: 20px;
+  color: #555;
+  max-width: 750px; 
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.diseno-imagen {
+  width: 100%;
+  height: auto;
+  max-width: 1000px; 
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.50); 
+}
+
+.capas-contenido-integrado {
+  padding: 60px 60px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.capas-bloque-superior {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  height: 280px;
+}
+
+.capas-texto h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.capas-texto p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.capas-imagen {
+  width: 100%;
+  max-width: 370px;
+  border-radius: 8px;
+}
+
+.capas-bloque-inferior {
+  display: grid;
+  padding: 0 550px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+
+.capas-tarjeta {
+  padding: 10px;
+  border-radius: 12px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.smart-guides-card {
+  background-image: url('imatges/img_design-guides@2x.jpg'); 
+  background-size: cover;
+  color: #ffffff;
+  padding-bottom: 30px;
+  justify-content: flex-end;
+}
+
+.layer-styles-card {
+  background-color: #f7f7f7;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.layer-styles-icono {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.layer-styles-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.layer-styles-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Iconos (sección “Designed and built exclusively for Mac.”) */
