@@ -377,6 +377,35 @@ html, body {
   color: #2f2e2e;
 }
 
+.iconos ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 896px;
+  margin-top: 84px;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+}
+
+.iconos li {
+  width: calc((100% - (30px * 3)) / 4);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.iconos li img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.iconos li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
 /* Sección “Powered” */
 .powered {
   display: block;
@@ -534,7 +563,6 @@ html, body {
 .pixelmator-apple-elemento img {
   width: 128px;
   height: 128px;
-  padding: 0 20px;
 }
 
 .pixelmator-apple-elemento h2 {
