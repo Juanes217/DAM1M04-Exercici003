@@ -344,6 +344,136 @@ html, body {
 }
 
 
+/* --- SECCIÓN: Create Stunning Designs --- */
+
+.stunning-section {
+    text-align: center;
+    padding: 120px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stunning-titulo {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.stunning-subtitulo {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+.stunning-imagen-contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.stunning-imagen {
+    width: 100%;
+    max-width: 980px; /* Controla el tamaño máximo */
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    /* Antes tenía: box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
+    /* Ahora no tiene sombra */
+}
+
+
+
+/* New Section HTML -->  */
+.workspace-section {
+width: 100%;
+background: #000;
+color: #fff;
+text-align: center;
+padding: 120px 20px;
+}
+
+
+.workspace-content h2 {
+font-size: 42px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+
+.workspace-content p {
+max-width: 600px;
+margin: 0 auto;
+font-size: 14px;
+line-height: 1.6;
+color: #ccc;
+}
+
+
+.workspace-image img {
+width: 80%;
+max-width: 900px;
+margin-top: 50px;
+border-radius: 10px;
+}
+
+/* ------------------------------------- */
+/* Estilos del Texto Principal (Primera Sección) */
+/* ------------------------------------- */
+
+.text-content {
+    margin-bottom: 60px;
+}
+
+/* Título Principal (H1) */
+.text-content h1 {
+    font-size: 3.5rem; 
+    font-weight: 300; 
+    line-height: 1.15; 
+    margin: 0 0 40px 0;
+}
+
+/* El texto en negrita */
+.text-content h1 span {
+    font-weight: 700; 
+}
+
+/* Subtítulo o Párrafo */
+.text-content p {
+    font-size: 0.95rem; 
+    color: #444;
+    line-height: 1.5;
+    margin: 0 auto 80px auto; 
+    max-width: 480px; 
+}
+
+
+/* ------------------------------------- */
+/* Estilos de la Área de Imagen (Primera Sección) */
+/* ------------------------------------- */
+
+.image-area {
+    position: relative;
+    width: 100%;
+    min-height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 20px;
+}
+
+.main-image {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+    /* Estilos de caja eliminados */
+}
 
 
 
