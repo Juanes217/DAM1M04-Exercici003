@@ -226,201 +226,535 @@ html, body {
 
 .seccion-diseno {
   background-color: #ffffff;
-  padding: 120px 20px;
-  text-align: center;
+  padding: 100px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .diseno-header {
-  margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .diseno-header h2 {
-  font-size: 56px; 
+  font-size: 52px;
   font-weight: 800;
   line-height: 1.1;
-  max-width: 600px; 
-  margin: 0 auto 20px auto;
-  color: #000;
+  max-width: 700px;
+  margin: 0 auto 25px;
 }
 
 .diseno-header p {
   font-size: 20px;
-  color: #555;
-  max-width: 750px; 
+  color: #636366;
+  max-width: 850px;
   margin: 0 auto;
   line-height: 1.5;
 }
 
-.diseno-imagen {
-  width: 100%;
-  height: auto;
-  max-width: 1000px; 
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.50); 
-}
-
-.capas-contenido-integrado {
-  padding: 60px 60px 0;
-  max-width: 1000px;
+.contenedor-principal-diseno {
+  max-width: 1050px;
   margin: 0 auto;
 }
 
-.capas-bloque-superior {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.diseno-imagen {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+/* Sistema de Grid de las tarjetas */
+.capas-grid-sistema {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+
+/* Bloque Superior (Gris claro) */
+.capas-bloque-superior {
+  display: flex;
+  background-color: #f5f5f7;
+  border-radius: 30px;
+  overflow: hidden; /* Importante para que la imagen se corte bien */
+  align-items: center;
+}
+
+.capas-texto {
+  flex: 1;
+  padding: 50px;
   text-align: left;
-  margin-bottom: 30px;
-  background-color: #f7f7f7;
-  border-radius: 12px;
-  height: 280px;
 }
 
 .capas-texto h3 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  color: #000;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .capas-texto p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
+  font-size: 17px;
+  color: #636366;
+  line-height: 1.5;
+}
+
+.capas-imagen-wrapper {
+  flex: 1;
+  height: 100%;
 }
 
 .capas-imagen {
   width: 100%;
-  max-width: 370px;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+/* Bloque Inferior (Dos tarjetas) */
 .capas-bloque-inferior {
   display: grid;
-  padding: 0 550px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Dividido 50/50 */
   gap: 30px;
-  text-align: left;
 }
 
 .capas-tarjeta {
-  padding: 10px;
-  border-radius: 12px;
-  min-height: 220px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 30px;
+  padding: 40px;
+  text-align: left;
 }
 
+/* Tarjeta Oscura (Smart Guides) */
 .smart-guides-card {
-  background-image: url('imatges/img_design-guides@2x.jpg'); 
+  background-color: #313d44; /* Color pizarra oscuro */
+  background-image: linear-gradient(rgba(49,61,68,0.7), rgba(49,61,68,0.7)), url('imatges/img_design-guides@2x.jpg');
   background-size: cover;
   color: #ffffff;
-  padding-bottom: 30px;
-  justify-content: flex-end;
-}
-
-.layer-styles-card {
-  background-color: #f7f7f7;
-  color: #000;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.smart-guides-card h3 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.smart-guides-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Tarjeta Blanca (Layer Styles) */
+.layer-styles-card {
+  background-color: #f5f5f7;
+  color: #000;
 }
 
 .layer-styles-icono {
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .layer-styles-card h3 {
   font-size: 28px;
-  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .layer-styles-card p {
-  font-size: 15px;
-  color: #555;
+  font-size: 16px;
+  color: #636366;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .capas-bloque-superior, .capas-bloque-inferior {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Image editing powered by machine learning. */ 
+
+/* Estilos generales de la sección */
+.features-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  color: #ffcc00; /* El amarillo de Machine Learning */
+}
+
+.header p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #666;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+/* La cuadrícula de 3 columnas */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  background-color: #f5f5f7; /* Gris muy suave estilo Apple */
+  border-radius: 24px;
+  padding: 40px 30px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.02); /* Efecto sutil al pasar el ratón */
+}
+
+.icon-container {
+  background-color: #ffcc00;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container img {
+  width: 24px; /* Tamaño del icono blanco dentro del cuadro */
+  height: auto;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.card p {
+  color: #6e6e73;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* pagina Magically get*/
+
+.repair-section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ... (el estilo del h1 y p se mantiene igual al anterior) ... */
+
+.main-video-container {
+  width: 100%;
+  max-width: 1000px; /* Para que no sea excesivamente gigante en monitores pro */
+  margin: 0 auto;
+  border-radius: 40px; 
+  overflow: hidden; 
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  background-color: #000; /* Fondo negro mientras carga el video */
+}
+
+.main-video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Esto asegura que el video cubra el área si hay diferencias de ratio */
+  object-fit: cover; 
+}
+
+
+/* siguiente pagina Easily design */
+/* --- Contenedor General --- */
+.design-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+.design-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.design-section p {
+  color: #636366;
   line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 40px;
 }
 
-
-/* --- SECCIÓN: Create Stunning Designs --- */
-
-.stunning-section {
-    text-align: center;
-    padding: 120px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+/* Imagen del título editable */
+.curved-text-container {
+  margin-bottom: 25px;
 }
 
-.stunning-titulo {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    color: #000;
+.curved-text-img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
 }
 
-.stunning-subtitulo {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 60px;
-    line-height: 1.6;
+/* --- Cuadrícula de tarjetas --- */
+.design-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.stunning-imagen-contenedor {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/* Tarjeta Verde (Horizontal) */
+.card-wide.green-bg {
+  background-color: #2cd47d; /* El verde de Pixelmator */
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-align: left;
+  min-height: 350px;
 }
 
-.stunning-imagen {
-    width: 100%;
-    max-width: 980px; /* Controla el tamaño máximo */
-    height: auto;
-    display: block;
-    border-radius: 12px;
-    /* Antes tenía: box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
-    /* Ahora no tiene sombra */
+.card-wide .card-content {
+  flex: 1;
+  padding: 50px;
+  color: white;
 }
 
-
-
-/* New Section HTML -->  */
-.workspace-section {
-width: 100%;
-background: #000;
-color: #fff;
-text-align: center;
-padding: 120px 20px;
+.card-wide .card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
-
-.workspace-content h2 {
-font-size: 42px;
-font-weight: 700;
-margin-bottom: 20px;
+.card-wide .card-content p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 0.95rem;
 }
 
-
-.workspace-content p {
-max-width: 600px;
-margin: 0 auto;
-font-size: 14px;
-line-height: 1.6;
-color: #ccc;
+.card-wide .card-image {
+  flex: 1.2;
+  height: 100%;
 }
 
-
-.workspace-image img {
-width: 80%;
-max-width: 900px;
-margin-top: 50px;
-border-radius: 10px;
+.card-wide .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que la imagen llene el espacio */
+  display: block;
 }
+
+/* --- Tarjetas de abajo (SVG y Typography) --- */
+.bottom-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card-small {
+  background-color: #f5f5f7;
+  border-radius: 30px;
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-small h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.card-small p {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  flex-grow: 1; /* Empuja el cuadro de imagen hacia abajo */
+}
+
+/* Cajas de demostración de texto (Blanco) */
+.demo-box {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.text-demo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .card-wide {
+    flex-direction: column;
+  }
+  .bottom-cards {
+    grid-template-columns: 1fr;
+  }
+  .card-wide .card-content {
+    padding: 30px;
+  }
+}
+
+/* pagina real-time */
+
+.effects-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Cabecera */
+.effects-section h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+  color: #000;
+}
+
+.effects-section p {
+  color: #636366;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Contenedor de 2 columnas */
+.effects-container {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  /* IMPORTANTE: stretch hace que la columna derecha e izquierda midan lo mismo */
+  align-items: stretch; 
+}
+
+/* Columna Izquierda: Imagen de la interfaz */
+.interface-preview {
+  flex: 1.3;
+  display: flex;
+}
+
+.interface-preview img {
+  width: 100%;
+  height: 100%; /* Se estira para igualar la altura de las tarjetas */
+  object-fit: cover; 
+  /* Muestra la parte derecha de la imagen (donde está el panel) */
+  object-position: right center; 
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  display: block;
+}
+
+/* Columna Derecha: Tarjetas apiladas */
+.effects-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espacio entre tarjeta blanca y rosa */
+}
+
+/* Estilo base de las tarjetas */
+.info-card {
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Tarjeta Blanca (Superior) */
+.white-card {
+  background-color: #ffffff;
+  border: 1px solid #f2f2f7;
+  /* flex: 0 asegura que no crezca más de lo necesario por el texto */
+  flex: 0; 
+  min-height: fit-content;
+}
+
+/* Tarjeta Rosa (Inferior) */
+.pink-card {
+  background-color: #f09cb3;
+  color: white;
+  padding-bottom: 0; /* Imagen pegada al borde */
+  /* flex: 1 hace que esta tarjeta "empuje" hacia abajo y rellene el hueco */
+  flex: 1; 
+  justify-content: space-between;
+}
+
+.pink-card p {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 20px;
+}
+
+/* Imagen dentro de la tarjeta rosa */
+.browser-img {
+  width: 100%;
+  /* Empuja la imagen al fondo absoluto de la tarjeta */
+  margin-top: auto; 
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 900px) {
+  .effects-container {
+    flex-direction: column;
+  }
+  
+  .interface-preview img {
+    height: 400px;
+    object-position: center;
+  }
+}
+
 
 /* ------------------------------------- */
 /* Estilos del Texto Principal (Primera Sección) */
